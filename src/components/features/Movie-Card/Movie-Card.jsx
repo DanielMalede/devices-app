@@ -1,32 +1,30 @@
-import "./Device-Card.css";
+import "./Movie-Card.css";
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-function DeviceCard({ deviceItem }) {
-  const { color, brand, id, price, ram, createdAt } = deviceItem;
+function MovieCard({movieItem}) {
+  const {title,year,cast,genres} = movieItem
   return (
     <Card sx={{ minWidth: 275 ,color:'primary.main',display: "inline-block",m:4,backgroundColor:"#20BEE5"}} >
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Id:{id}
+        title:{title}
         </Typography>
         <Typography variant="h5" component="div">
-          Brand:{brand}
+        year:{year}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          create:{createdAt}
+        cast:{cast}
         </Typography>
         <Typography variant="body2">
-          Price:{price}
+        genres:{genres}
           <br />
-          Color:{color}
-          <br />
-          Ram:{ram}
         </Typography>
       </CardContent>
     </Card>
   );
-}
-export default DeviceCard;
+};
+
+export default MovieCard;
