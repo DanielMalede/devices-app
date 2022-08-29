@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -15,9 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Home from "../../pages/Home/Home";
 
-
-
-const pages = ["Home","Devices","Movies","MovieDetails"];
+const pages = ["Home", "Devices", "Movies", "MovieDetails"];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -91,7 +88,7 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <Link style={{ textDecoration: 'none' }} to={page}>
+                <Link style={{ textDecoration: "none" }} to={page}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
@@ -104,7 +101,7 @@ const Header = () => {
             variant="h5"
             noWrap
             component="a"
-            href={<Link to={<Home/>} />}
+            href={<Link to={<Home />} />}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -120,7 +117,7 @@ const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((pagesNav) => (
-              <Link style={{ textDecoration: 'none' }} to={pagesNav}>
+              <Link style={{ textDecoration: "none" }} to={pagesNav}>
                 <Button
                   key={pagesNav}
                   onClick={handleCloseNavMenu}
