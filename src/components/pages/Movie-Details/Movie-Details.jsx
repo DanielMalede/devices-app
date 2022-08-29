@@ -1,5 +1,5 @@
 import "./Movie-Details.css";
-import React, { useContext ,useEffect} from "react";
+import React, { useContext, useEffect } from "react";
 import { moviesContext } from "../../../context/Movie-Context/Movie-Context";
 import MovieTable from "../../features/Movie-Table/Movie-Table";
 import moviesApi from "../../../service/movies.service";
@@ -10,7 +10,7 @@ function MovieDetails() {
   }, []);
   return (
     <div className="movie-details">
-        <MovieTable movieItem={movies} />
+      <MovieTable movieItem={movies} />
     </div>
   );
 }
