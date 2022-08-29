@@ -17,7 +17,7 @@ import Home from "../../pages/Home/Home";
 
 
 
-const pages = ["Home","Devices","Movies"];
+const pages = ["Home","Devices","Movies","MovieDetails"];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

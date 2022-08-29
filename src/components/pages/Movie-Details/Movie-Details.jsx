@@ -1,20 +1,18 @@
-import "./Movies.css";
-import React, { useContext, useEffect } from "react";
+import "./Movie-Details.css";
+import React, { useContext ,useEffect} from "react";
 import { moviesContext } from "../../../context/Movie-Context/Movie-Context";
-import MovieCard from "../../features/Movie-Card/Movie-Card";
+import MovieTable from "../../features/Movie-Table/Movie-Table";
 import moviesApi from "../../../service/movies.service";
-function Movies() {
+function MovieDetails() {
   const { movies, setMovies } = useContext(moviesContext);
   useEffect(() => {
     moviesApi().then((res) => setMovies(res));
   }, []);
   return (
-    <div className="movies">
-      {movies.map((movieItem) => (
-        <MovieCard movieItem={movieItem} />
-      ))}
+    <div className="movie-details">
+        <MovieTable movieItem={movies} />
     </div>
   );
 }
 
-export default Movies;
+export default MovieDetails;
