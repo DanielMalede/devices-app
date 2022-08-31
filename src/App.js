@@ -5,7 +5,6 @@ import Header from './components/features/Header/Header';
 import LinkedList from './Class'
 import Node from './Class'
 const pages = ["Home","Devices"];
-
 function App() {
   return (
 
