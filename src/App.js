@@ -8,10 +8,10 @@ const pages = ["Home","Devices"];
 function App() {
   return (
     <div className="App">
-      <B.rowserRouter>
+      <BrowserRouter>
       <Header/>
       <Router/>
-      </B.rowserRouter>
+      </BrowserRouter>
       {/* <LinkedList/>
       <Node/> */}
     </div>
