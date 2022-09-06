@@ -11,7 +11,6 @@ export class Node {
     this.next = node;
   }
 }
-
 export default class LinkedList {
   constructor() {
     this.head = null;
@@ -40,5 +39,3 @@ export default class LinkedList {
     }
   }
 }
-
-console.log();
