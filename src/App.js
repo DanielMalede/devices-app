@@ -9,12 +9,12 @@ function App() {
   return (
 
     <div className="App">
-      {/* <BrowserRouter>
+      {/* {/* <BrowserRouter> */}
       <Header/>
       <Router/>
       </BrowserRouter> */}
-      <LinkedList/>
-      <Node/>
+      {/* <LinkedList/>
+      <Node/> */}
     </div>
   );
 }
