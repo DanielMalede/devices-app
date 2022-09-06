@@ -12,7 +12,7 @@ function App() {
       <B.rowserRouter>
       <Header/>
       <Router/>
-      </B.rowserRouter> */}
+      </B.rowserRouter>
       {/* <LinkedList/>
       <Node/> */}
     </div>
