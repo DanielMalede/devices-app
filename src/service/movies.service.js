@@ -4,5 +4,4 @@ export default async function moviesApi() {
             .then(res => res.json())
     } catch (error) {
     }
-
 }
