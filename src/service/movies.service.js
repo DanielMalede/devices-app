@@ -5,4 +5,5 @@ export default async function moviesApi() {
     } catch (error) {
 
     }
+    
 }
